@@ -1,19 +1,4 @@
-/*!
-    
- =========================================================
- * Paper Dashboard - v1.1.2
- =========================================================
- 
- * Product Page: http://www.creative-tim.com/product/paper-dashboard
- * Copyright 2017 Creative Tim (http://www.creative-tim.com)
- * Licensed under MIT (https://github.com/creativetimofficial/paper-dashboard/blob/master/LICENSE.md)
- 
- =========================================================
- 
- * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
- 
- */
-/*      light colors - used for select dropdown         */
+
 .ct-blue {
   stroke: #7A9E9F !important; }
 
@@ -1337,6 +1322,11 @@ textarea.form-control {
   border-color: #FFFFFF;
   opacity: 1;
   filter: alpha(opacity=100); }
+  td a {
+    display:block;
+    width:100%;
+    color:black;
+}
 
 .footer {
   background-attachment: fixed;
@@ -2762,3 +2752,4 @@ textarea.form-control {
     overflow-y: hidden;
     -ms-overflow-style: -ms-autohiding-scrollbar;
     -webkit-overflow-scrolling: touch; } }
+    

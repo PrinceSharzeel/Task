@@ -6,7 +6,7 @@
 	<link rel="icon" type="image/png" sizes="96x96" href="assets/img/favicon.png">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
-	<title>Paper Dashboard by Creative Tim</title>
+	<title>CSIG</title>
 
 	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
     <meta name="viewport" content="width=device-width" />
@@ -19,7 +19,7 @@
     <link href="assets/css/animate.min.css" rel="stylesheet"/>
 
     <!--  Paper Dashboard core CSS    -->
-    <link href="assets/css/paper-dashboard.css" rel="stylesheet"/>
+    <link href="assets/css/dashboard.css" rel="stylesheet"/>
 
 
     <!--  CSS for Demo Purpose, don't include it in your project     -->
@@ -30,12 +30,16 @@
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Muli:400,300' rel='stylesheet' type='text/css'>
     <link href="assets/css/themify-icons.css" rel="stylesheet">
-
+   <style>
+   
+  
+   
+   </style>
 </head>
 <body>
 
 <div class="wrapper">
-    <div class="sidebar" data-background-color="white" data-active-color="danger">
+    <div class="sidebar" data-background-color="white" data-active-color="success">
 
     <!--
 		Tip 1: you can change the color of the sidebar's background using: data-background-color="white | black"
@@ -44,8 +48,8 @@
 
     	<div class="sidebar-wrapper">
             <div class="logo">
-                <a href="http://www.creative-tim.com" class="simple-text">
-                    Creative Tim
+                <a href="" class="simple-text">
+                    CSIG
                 </a>
             </div>
 
@@ -63,15 +67,9 @@
                     </a>
                 </li>
                 <li>
-                    <a href="table.html">
-                        <i class="ti-view-list-alt"></i>
-                        <p>Table List</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="typography.html">
-                        <i class="ti-text"></i>
-                        <p>Typography</p>
+                    <a href="task_submit.html">
+                        <i class="ti-bag"></i>
+                        <p>Add</p>
                     </a>
                 </li>
                 <li>
@@ -80,24 +78,7 @@
                         <p>Icons</p>
                     </a>
                 </li>
-                <li>
-                    <a href="maps.html">
-                        <i class="ti-map"></i>
-                        <p>Maps</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="notifications.html">
-                        <i class="ti-bell"></i>
-                        <p>Notifications</p>
-                    </a>
-                </li>
-				<li class="active-pro">
-                    <a href="upgrade.html">
-                        <i class="ti-export"></i>
-                        <p>Upgrade to PRO</p>
-                    </a>
-                </li>
+               
             </ul>
     	</div>
     </div>
@@ -116,16 +97,10 @@
                 </div>
                 <div class="collapse navbar-collapse">
                     <ul class="nav navbar-nav navbar-right">
-                        <li>
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                <i class="ti-panel"></i>
-								<p>Stats</p>
-                            </a>
-                        </li>
+                        
                         <li class="dropdown">
                               <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                                     <i class="ti-bell"></i>
-                                    <p class="notification">5</p>
 									<p>Notifications</p>
 									<b class="caret"></b>
                               </a>
@@ -159,13 +134,13 @@
                                 <div class="row">
                                     <div class="col-xs-5">
                                         <div class="icon-big icon-warning text-center">
-                                            <i class="ti-server"></i>
+                                            <i class="ti-user"></i>
                                         </div>
                                     </div>
                                     <div class="col-xs-7">
                                         <div class="numbers">
-                                            <p>Capacity</p>
-                                            105GB
+                                            <p>To Do</p>
+                                            2
                                         </div>
                                     </div>
                                 </div>
@@ -184,13 +159,13 @@
                                 <div class="row">
                                     <div class="col-xs-5">
                                         <div class="icon-big icon-success text-center">
-                                            <i class="ti-wallet"></i>
+                                            <i class="ti-crown"></i>
                                         </div>
                                     </div>
                                     <div class="col-xs-7">
                                         <div class="numbers">
-                                            <p>Revenue</p>
-                                            $1,345
+                                            <p>Demos</p>
+                                            2
                                         </div>
                                     </div>
                                 </div>
@@ -234,13 +209,13 @@
                                 <div class="row">
                                     <div class="col-xs-5">
                                         <div class="icon-big icon-info text-center">
-                                            <i class="ti-twitter-alt"></i>
+                                            <i class="ti-dashboard"></i>
                                         </div>
                                     </div>
                                     <div class="col-xs-7">
                                         <div class="numbers">
-                                            <p>Followers</p>
-                                            +45
+                                            <p>Tasks</p>
+                                            4
                                         </div>
                                     </div>
                                 </div>
@@ -254,78 +229,226 @@
                         </div>
                     </div>
                 </div>
-                <div class="row">
 
-                    <div class="col-md-12">
-                        <div class="card">
-                            <div class="header">
-                                <h4 class="title">Users Behavior</h4>
-                                <p class="category">24 Hours performance</p>
-                            </div>
-                            <div class="content">
-                                <div id="chartHours" class="ct-chart"></div>
-                                <div class="footer">
-                                    <div class="chart-legend">
-                                        <i class="fa fa-circle text-info"></i> Open
-                                        <i class="fa fa-circle text-danger"></i> Click
-                                        <i class="fa fa-circle text-warning"></i> Click Second Time
+
+
+                <div class="row">
+                        <div class="col-md-6">
+                                <div class="card">
+                                    <div class="header">
+                                        <h4 class="title">To Do</h4>
+                                        <p class="category">Current requirements</p>
                                     </div>
-                                    <hr>
-                                    <div class="stats">
-                                        <i class="ti-reload"></i> Updated 3 minutes ago
+                                    <div class="content table-responsive table-full-width">
+                                        <table class="table table-striped">
+                                            <thead>
+                                                <th>Name</th>
+                                                <th>Urgency</th>
+                                                <th>Deadline</th>
+                                                <th>Progress</th>
+                                                <th>Assignees</th>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>  <a href="specific_task.html">Emirates</a></td>
+                                                    <td>High</td>
+                                                    <td>15 Sept</td>
+                                                    <td>
+                                                            <div class="progress">
+                                                                    <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar"
+                                                                    aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width:40%">
+                                                                      40% Complete (success)
+                                                                    </div>
+                                                                  </div>
+                
+                
+                                                    </td>
+                                                    <td>
+                                                            <table>
+                                                                    <tbody>
+                                                                            <th style="border:0;"><div class="avatar">
+                                                                                    <img src="assets/img/faces/face-0.jpg" alt="Circle Image" class="img-circle img-no-padding img-responsive">
+                                                                                </div></th>
+                                                                            <th style="border:0;"><div class="avatar">
+                                                                                    <img src="assets/img/faces/face-1.jpg" alt="Circle Image" class="img-circle img-no-padding img-responsive">
+                                                                                </div></th>
+                                                                                <th style="border:0;"><div class="avatar">
+                                                                                        <img src="assets/img/faces/face-0.jpg" alt="Circle Image" class="img-circle img-no-padding img-responsive">
+                                                                                    </div></th>
+                                                                    </tbody>
+                    
+                                                            </table>
+                    
+                                                        </td>
+                                                </tr>
+                                                <tr>
+                                                        <td>  <a href="specific_task.html">Emirates</a></td>
+                                                    <td>High</td>
+                                                    <td>15 Sept</td>
+                                                    <td>
+                                                        
+                                                            <div class="progress">
+                                                                    <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar"
+                                                                    aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width:40%">
+                                                                      40% Complete (success)
+                                                                    </div>
+                                                                  </div>
+                
+                                                    </td>
+                                                    <td>
+                                                            <table>
+                                                                    <tbody>
+                                                                            <th style="border:0;"><div class="avatar">
+                                                                                    <img src="assets/img/faces/face-0.jpg" alt="Circle Image" class="img-circle img-no-padding img-responsive">
+                                                                                </div></th>
+                                                                            <th style="border:0;"><div class="avatar">
+                                                                                    <img src="assets/img/faces/face-1.jpg" alt="Circle Image" class="img-circle img-no-padding img-responsive">
+                                                                                </div></th>
+                                                                    </tbody>
+                    
+                                                            </table>
+                    
+                                                        </td>
+                                                </tr>
+                                               
+                                            </tbody>
+                                        </table>
+                
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                   
+                    
+                </div>
+
+                
+           <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="header">
+                        <h4 class="title">Task Tray</h4>
+                        <p class="category">Current requirements</p>
+                    </div>
+                    <div class="content table-responsive table-full-width">
+                        <table class="table table-striped">
+                            <thead>
+                                <th>Name</th>
+                                <th>Urgency</th>
+                                <th>Deadline</th>
+                                <th>Progress</th>
+                                <th>Assignees</th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                        <td>  <a href="specific_task.html">Emirates</a></td>
+                                    <td>High</td>
+                                    <td>15 Sept</td>
+                                    <td>
+                                            <div class="progress">
+                                                    <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar"
+                                                    aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width:40%">
+                                                      40% Complete (success)
+                                                    </div>
+                                                  </div>
+
+
+                                    </td>
+                                    <td>
+                                            <table>
+                                                    <tbody>
+                                                            <th style="border:0;"><div class="avatar">
+                                                                    <img src="assets/img/faces/face-0.jpg" alt="Circle Image" class="img-circle img-no-padding img-responsive">
+                                                                </div></th>
+                                                            <th style="border:0;"><div class="avatar">
+                                                                    <img src="assets/img/faces/face-1.jpg" alt="Circle Image" class="img-circle img-no-padding img-responsive">
+                                                                </div></th>
+                                                                <th style="border:0;"><div class="avatar">
+                                                                        <img src="assets/img/faces/face-0.jpg" alt="Circle Image" class="img-circle img-no-padding img-responsive">
+                                                                    </div></th>
+                                                    </tbody>
+    
+                                            </table>
+    
+                                        </td>
+                                </tr>
+                                <tr>
+                                        <td>  <a href="specific_task.html">Emirates</a></td>
+                                    <td>High</td>
+                                    <td>15 Sept</td>
+                                    <td>
+                                        
+                                            <div class="progress">
+                                                    <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar"
+                                                    aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width:40%">
+                                                      40% Complete (success)
+                                                    </div>
+                                                  </div>
+
+                                    </td>
+                                    <td>
+                                            <table>
+                                                    <tbody >
+                                                            <th style="border:0;"><div class="avatar">
+                                                                    <img src="assets/img/faces/face-0.jpg" alt="Circle Image" class="img-circle img-no-padding img-responsive">
+                                                                </div></th>
+                                                            <th style="border:0;"><div class="avatar">
+                                                                    <img src="assets/img/faces/face-1.jpg" alt="Circle Image" class="img-circle img-no-padding img-responsive">
+                                                                </div></th>
+                                                                <th style="border:0;"><div class="avatar">
+                                                                        <img src="assets/img/faces/face-0.jpg" alt="Circle Image" class="img-circle img-no-padding img-responsive">
+                                                                    </div></th>
+                                                    </tbody>
+    
+                                            </table>
+                                        </td>
+                                </tr>
+                                <tr>
+                                        <td>  <a href="specific_task.html">Emirates</a></td>
+                                    <td>High</td>
+                                    <td>15 Sept</td>
+                                    <td>
+                                        
+
+                                            <div class="progress">
+                                                    <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar"
+                                                    aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width:40%">
+                                                      40% Complete (success)
+                                                    </div>
+                                                  </div>
+
+
+                                    </td>
+                                    <td>
+                                        <table>
+                                                <tbody>
+                                                        <th style="border:0;"><div class="avatar">
+                                                                <img src="assets/img/faces/face-0.jpg" alt="Circle Image" class="img-circle img-no-padding img-responsive">
+                                                            </div></th>
+                                                        <th style="border:0;"><div class="avatar">
+                                                                <img src="assets/img/faces/face-1.jpg" alt="Circle Image" class="img-circle img-no-padding img-responsive">
+                                                            </div></th>
+                                                </tbody>
+
+                                        </table>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="card">
-                            <div class="header">
-                                <h4 class="title">Email Statistics</h4>
-                                <p class="category">Last Campaign Performance</p>
-                            </div>
-                            <div class="content">
-                                <div id="chartPreferences" class="ct-chart ct-perfect-fourth"></div>
+            </div>
 
-                                <div class="footer">
-                                    <div class="chart-legend">
-                                        <i class="fa fa-circle text-info"></i> Open
-                                        <i class="fa fa-circle text-danger"></i> Bounce
-                                        <i class="fa fa-circle text-warning"></i> Unsubscribe
-                                    </div>
-                                    <hr>
-                                    <div class="stats">
-                                        <i class="ti-timer"></i> Campaign sent 2 days ago
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="card ">
-                            <div class="header">
-                                <h4 class="title">2015 Sales</h4>
-                                <p class="category">All products including Taxes</p>
-                            </div>
-                            <div class="content">
-                                <div id="chartActivity" class="ct-chart"></div>
 
-                                <div class="footer">
-                                    <div class="chart-legend">
-                                        <i class="fa fa-circle text-info"></i> Tesla Model S
-                                        <i class="fa fa-circle text-warning"></i> BMW 5 Series
-                                    </div>
-                                    <hr>
-                                    <div class="stats">
-                                        <i class="ti-check"></i> Data information certified
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+
+
+           </div>
+
+
+
+                
+               
             </div>
         </div>
 
@@ -336,24 +459,19 @@
                     <ul>
 
                         <li>
-                            <a href="http://www.creative-tim.com">
-                                Creative Tim
+                            <a href="">
+                               About
                             </a>
                         </li>
                         <li>
-                            <a href="http://blog.creative-tim.com">
-                               Blog
-                            </a>
-                        </li>
-                        <li>
-                            <a href="http://www.creative-tim.com/license">
-                                Licenses
+                            <a href="">
+                               Team
                             </a>
                         </li>
                     </ul>
                 </nav>
                 <div class="copyright pull-right">
-                    &copy; <script>document.write(new Date().getFullYear())</script>, made with <i class="fa fa-heart heart"></i> by <a href="http://www.creative-tim.com">Creative Tim</a>
+                    &copy; <script>document.write(new Date().getFullYear())</script>, made with <i class="fa fa-heart heart"></i> by <a href="">CSIG</a>
                 </div>
             </div>
         </footer>
@@ -392,8 +510,8 @@
         	demo.initChartist();
 
         	$.notify({
-            	icon: 'ti-gift',
-            	message: "Welcome to <b>Paper Dashboard</b> - a beautiful Bootstrap freebie for your next project."
+            	icon: 'ti-face-smile',
+            	message: "Welcome  <b>Employee</b>"
 
             },{
                 type: 'success',

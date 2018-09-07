@@ -1,0 +1,17 @@
+* Login/signup/Intro page
+* Dashboard 
+     -> Tasks List
+           Name --- progress bar---- assignees
+     -> My Tasks
+           -do-
+*Task Details
+    -> Progress------ Deadline-----Urgency
+    -> Requirements(order by importance+date),new reqs.
+    -> Discussion
+*Add Task
+    -> Details(Added by, deadline,assignees,importance,etc.)
+    -> Similar to previous task
+    -> Related files(excel,pdfs)
+
+    
+    
