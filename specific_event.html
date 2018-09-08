@@ -125,51 +125,30 @@
         <div class="content">
             <div class="container-fluid">
                
-                <div class="row" id="task_row">
-
-                    <div class="col-lg-8 col-md-7" id="submit_task" style="display: none;">
-                        <div class="card">
+				
+                    <div class="col-lg-8 col-md-7" id="update_event">
+                         <div class="card">
                             <div class="header">
-                                <h4 class="title">Update Task</h4>
+                                <h4 class="title">Update Event</h4>
                             </div>
                             <div class="content">
                                 <form>
                                     <div class="row">
-                                        <div class="col-md-5">
+                                        <div class="col-md-6">
                                             <div class="form-group">
-                                                <label>Company</label>
-                                                <input type="text" class="form-control border-input" placeholder="Company" >
+                                                <label>Date</label>
+                                                <input type="date" class="form-control border-input" placeholder="Company" value="">
                                             </div>
                                         </div>
-                                        <div class="col-md-3">
+										<div class="col-md-6">
                                             <div class="form-group">
-                                                <label>Name</label>
-                                                <input type="text" class="form-control border-input" placeholder="Name">
-                                            </div>
-                                        </div>
-                                        <div class="col-md-4">
-                                            <div class="form-group">
-                                                <label for="exampleInputEmail1">Email address</label>
-                                                <input type="email" class="form-control border-input" placeholder="Email">
+                                                <label>Time</label>
+                                                <input type="time" class="form-control border-input" placeholder="Company" value="">
                                             </div>
                                         </div>
                                     </div>
 
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <div class="form-group">
-                                                <label>Deadline</label>
-                                                <input type="date" class="form-control border-input" placeholder="Company" value="">
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="form-group">
-                                                <label>Importance</label>
-                                                <input type="text" class="form-control border-input" placeholder="Last Name" value="">
-                                            </div>
-                                        </div>
-                                    </div>
-									<div class="row">
+                                   <div class="row">
                                         <div class="col-md-12">
                                             <div class="form-group">
                                               <label for="sel1">Select Assignee(s)</label>
@@ -181,106 +160,22 @@
 											  </select></div>
                                         </div>
 									</div>
-                                    <div class="row">
-                                        <div class="col-md-12">
-                                            <div class="form-group">
-                                                <label>Address</label>
-                                                <input type="text" class="form-control border-input" placeholder="Home Address" value="Melbourne, Australia">
-                                            </div>
-                                        </div>
-                                    </div>
 
                                    
                                     <div class="row">
                                         <div class="col-md-12">
                                             <div class="form-group">
-                                                <label>About Me</label>
-                                                <textarea rows="5" class="form-control border-input" placeholder="Here can be your description" value="Mike">
-                                                       Req. to be completed in four phases
+                                                <label>About</label>
+                                                <textarea rows="5" class="form-control border-input" placeholder="Details of event" value="Mike">
+                                                       
                                                 </textarea>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="text-center">
                                         <button type="submit" class="btn btn-info btn-fill btn-wd">Add</button>
-										
-                                        <button type="submit" class="btn btn-danger btn-fill btn-wd">Cancel</button>
-                                    </div>
-                                    <div class="clearfix"></div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-  </div>
-           
-
-
-				
-                    <div class="col-lg-8 col-md-7" id="update_task">
-                        <div class="card">
-                            <div class="header">
-                                <h4 class="title">Update Task <i id="tg" class="ti-pencil"></i></h4>
-                            </div>
-                            <div class="content">
-                                <form>
-                                    <div class="row">
-                                        <div class="col-md-5">
-                                            <div class="form-group">
-                                                <label>Company</label>
-                                                <input type="text" class="form-control border-input" placeholder="Company" >
-                                            </div>
-                                        </div>
-                                        <div class="col-md-3">
-                                            <div class="form-group">
-                                                <label>Name</label>
-                                                <input type="text" class="form-control border-input" placeholder="Name">
-                                            </div>
-                                        </div>
-                                        <div class="col-md-4">
-                                            <div class="form-group">
-                                                <label for="exampleInputEmail1">Email address</label>
-                                                <input type="email" class="form-control border-input" placeholder="Email">
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <div class="form-group">
-                                                <label>Deadline</label>
-                                                <input type="date" class="form-control border-input" placeholder="Company" value="">
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="form-group">
-                                                <label>Importance</label>
-                                                <input type="text" class="form-control border-input" placeholder="Last Name" value="">
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="row">
-                                        <div class="col-md-12">
-                                            <div class="form-group">
-                                                <label>Address</label>
-                                                <input type="text" class="form-control border-input" placeholder="Home Address" value="Melbourne, Australia">
-                                            </div>
-                                        </div>
-                                    </div>
-
+										     <button type="submit" class="btn btn-danger btn-fill btn-wd">Cancel</button>
                                    
-                                    <div class="row">
-                                        <div class="col-md-12">
-                                            <div class="form-group">
-                                                <label>About Me</label>
-                                                <textarea rows="5" class="form-control border-input" placeholder="Here can be your description" value="Mike">
-                                                       Req. to be completed in four phases
-                                                </textarea>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="text-center">
-                                        <button type="submit" class="btn btn-info btn-fill btn-wd">Add</button>
                                     </div>
                                     <div class="clearfix"></div>
                                 </form>
@@ -402,93 +297,6 @@
               
 
                 </div>
-				<h3> Comments </h3>
-				
-				
-				
-				<div class="row" >
-				
-				   <div class="col-lg-12 col-md-7">
-				      <div class="card">
-					   
-					   <div class="content">
-					      <div class="row">
-                                        <div class="col-md-12">
-                                            <div class="form-group">
-                                                <label>Comment</label>
-                                                <textarea rows="5" class="form-control border-input" placeholder="Here can be your description" value="Mike">
-                                                       New directions...
-                                                </textarea>
-                                            </div>
-                                        </div>
-                                    </div>
-					   
-					     </div>
-				    </div>
-				  </div>
-				</div>
-			    <div class="row">					 
-						<div class="card">
-						     <ul style="list-style-type: none;">
-							                      
-												  <li style="border-bottom: 1px solid #F4F3FF;">
-                                                        <div class="row">
-                                                            <div class="col-lg-2 col-xs-3">
-                                                                <div class="avatar">
-                                                                    <img src="assets/img/faces/face-2.jpg" alt="Circle Image" class="img-circle img-no-padding img-responsive">
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-lg-10 col-xs-6" >
-                                                              <h4>Agree </h4>
-                                                            </div>
-        
-                                                           
-                                                        </div>
-                                                    </li>
-													  <li style="border-bottom: 1px solid #F4F3FF;" >
-                                                        <div class="row">
-                                                            <div class="col-lg-2 col-xs-3">
-                                                                <div class="avatar">
-                                                                    <img src="assets/img/faces/face-3.jpg" alt="Circle Image" class="img-circle img-no-padding img-responsive">
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-lg-10 col-xs-6" >
-                                                              <h4>Ya! This will work , I guess</h4>
-                                                            </div>
-        
-                                                           
-                                                        </div>
-                                                    </li>
-													  <li  style="border-bottom: 1px solid #F4F3FF;">
-                                                        <div class="row">
-                                                            <div class="col-lg-2 col-xs-3">
-                                                                <div class="avatar">
-                                                                    <img src="assets/img/faces/face-1.jpg" alt="Circle Image" class="img-circle img-no-padding img-responsive">
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-lg-10 col-xs-6" >
-                                                              <h4>Will this work ?</h4>
-                                                            </div>
-        
-                                                           
-                                                        </div>
-                                                    </li>
-													
-                                                   
-                             </ul>
-						 </div>
-						     
-						 
-						 
-			</div>
-				     
-		</div>
-				   
-				   
-				   
-				 
-				
-				
 				
 				
 				</div>

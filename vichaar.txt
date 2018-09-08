@@ -4,6 +4,7 @@
            Name --- progress bar---- assignees
      -> My Tasks
            -do-
+	 -> Chain of Tasks
 *Task Details
     -> Progress------ Deadline-----Urgency
     -> Requirements(order by importance+date),new reqs.
@@ -12,6 +13,7 @@
     -> Details(Added by, deadline,assignees,importance,etc.)
     -> Similar to previous task
     -> Related files(excel,pdfs)
+	->Chained
 
     
     

@@ -83,7 +83,7 @@
                         <span class="icon-bar bar2"></span>
                         <span class="icon-bar bar3"></span>
                     </button>
-                    <a class="navbar-brand" href="#">User Profile</a>
+                    <a class="navbar-brand" href="#">Add +</a>
                 </div>
                 <div class="collapse navbar-collapse">
                     <ul class="nav navbar-nav navbar-right">
@@ -118,8 +118,100 @@
 
         <div class="content">
             <div class="container-fluid">
-                <div class="row">
-                    <div class="col-lg-8 col-md-7">
+			
+			
+			
+			
+			
+			   <div class="row">
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="card">
+                            <div class="content">
+                                <div class="row">
+                                    <div class="col-xs-5">
+                                        <div class="icon-big icon-warning text-center">
+                                            <i class="ti-user"></i>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-7">
+                                        <div class="numbers">
+                                            <p>Task</p>
+                                            2
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="footer">
+                                    <hr />
+                                    <div class="stats" id="add_task">
+                                        Add
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                   
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="card">
+                            <div class="content">
+                                <div class="row">
+                                    <div class="col-xs-5">
+                                        <div class="icon-big icon-info text-center">
+                                            <i class="ti-calendar"></i>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-7">
+                                        <div class="numbers" >
+                                            <p>Events</p>
+                                            0
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="footer">
+                                    <hr />
+                                    <div class="stats" id="add_event">
+                                         Add
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+					 <div class="col-lg-4 col-sm-6">
+                        <div class="card">
+                            <div class="content">
+                                <div class="row">
+                                    <div class="col-xs-5">
+                                        <div class="icon-big icon-danger text-center">
+                                            <i class="ti-pulse"></i>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-7">
+                                        <div class="numbers">
+                                            <p>Issue</p>
+                                            23
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="footer">
+                                    <hr />
+                                    <div class="stats" id="add_issue">
+									Add
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    </div>
+                </div>
+
+			
+			
+			<!--- Task add -->
+			
+			
+                <div class="row" id="task_row">
+
+                    <div class="col-lg-8 col-md-7" id="submit_task" style="display: none;">
                         <div class="card">
                             <div class="header">
                                 <h4 class="title">New Task</h4>
@@ -161,7 +253,18 @@
                                             </div>
                                         </div>
                                     </div>
-
+									<div class="row">
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                              <label for="sel1">Select Assignee(s)</label>
+											  <select class="form-control" id="sel1">
+												<option>Shraddha</option>
+												<option>Surya</option>
+												<option>sds</option>												
+												<option>Others</option>
+											  </select></div>
+                                        </div>
+									</div>
                                     <div class="row">
                                         <div class="col-md-12">
                                             <div class="form-group">
@@ -184,20 +287,28 @@
                                     </div>
                                     <div class="text-center">
                                         <button type="submit" class="btn btn-info btn-fill btn-wd">Add</button>
+										
+                                        <button type="submit" class="btn btn-danger btn-fill btn-wd">Cancel</button>
                                     </div>
                                     <div class="clearfix"></div>
                                 </form>
                             </div>
                         </div>
                     </div>
-
+  
+  
+  
+					
+  
+  
                     
-                    <div class="col-lg-4 col-md-5">
+                    <div class="col-lg-4 col-md-5" id="team_list" style="display: none;">
                         
                           <div class="card">
                             <div class="header">
-                                    <h4 class="title">Suggested Team Members</h4>
+                                    <h4 class="title" id="task_button">Suggested Team Members</h4>
                                 </div>
+							
                                 <div class="content">
                                     <ul class="list-unstyled team-members">
                                                 <li>
@@ -393,7 +504,7 @@
                                                 </ul>
                                     </div>
     
-    
+  
     
                               </div>
 
@@ -402,7 +513,594 @@
 
 
                 </div>
-            </div>
+           
+
+
+		   
+		   <!--- Event add -->
+		   
+		        <div class="row" id="event_row">
+
+                    <div class="col-lg-8 col-md-7" id="submit_event" style="display: none;">
+                        <div class="card">
+                            <div class="header">
+                                <h4 class="title">New Event</h4>
+                            </div>
+                            <div class="content">
+                                <form>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label>Date</label>
+                                                <input type="date" class="form-control border-input" placeholder="Company" value="">
+                                            </div>
+                                        </div>
+										<div class="col-md-6">
+                                            <div class="form-group">
+                                                <label>Time</label>
+                                                <input type="time" class="form-control border-input" placeholder="Company" value="">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                   <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                              <label for="sel1">Select Assignee(s)</label>
+											  <select class="form-control" id="sel1">
+												<option>Shraddha</option>
+												<option>Surya</option>
+												<option>sds</option>												
+												<option>Others</option>
+											  </select></div>
+                                        </div>
+									</div>
+
+                                   
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <label>About</label>
+                                                <textarea rows="5" class="form-control border-input" placeholder="Details of event" value="Mike">
+                                                       
+                                                </textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="text-center">
+                                        <button type="submit" class="btn btn-info btn-fill btn-wd">Add</button>
+										     <button type="submit" class="btn btn-danger btn-fill btn-wd">Cancel</button>
+                                   
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+  
+                    
+  
+                    
+                    <div class="col-lg-4 col-md-5" id="team_event" style="display: none;">
+                        
+                          <div class="card">
+                            <div class="header">
+                                    <h4 class="title" id="task_button">Suggested Team Members</h4>
+                                </div>
+							
+                                <div class="content">
+                                    <ul class="list-unstyled team-members">
+                                                <li>
+                                                    <div class="row">
+                                                        <div class="col-xs-3">
+                                                            <div class="avatar">
+                                                                <img src="assets/img/faces/face-0.jpg" alt="Circle Image" class="img-circle img-no-padding img-responsive">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-xs-6">
+                                                           sdgsd sdgs g
+                                                            <br />
+                                                            <span class="text-muted"><small>Offline</small></span>
+                                                        </div>
+    
+                                                        <div class="col-xs-3 text-right">
+                                                            <btn class="btn btn-sm btn-success btn-icon"><i class="fa fa-skype"></i></btn>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="row">
+                                                        <div class="col-xs-3">
+                                                            <div class="avatar">
+                                                                <img src="assets/img/faces/face-1.jpg" alt="Circle Image" class="img-circle img-no-padding img-responsive">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-xs-6">
+                                                            affdsfsdf sdgs
+                                                            <br />
+                                                            <span class="text-success"><small>Available</small></span>
+                                                        </div>
+    
+                                                        <div class="col-xs-3 text-right">
+                                                            <btn class="btn btn-sm btn-success btn-icon"><i class="fa fa-skype"></i></btn>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="row">
+                                                        <div class="col-xs-3">
+                                                            <div class="avatar">
+                                                                <img src="assets/img/faces/face-3.jpg" alt="Circle Image" class="img-circle img-no-padding img-responsive">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-xs-6">
+                                                          sdfsdf sdf
+                                                            <br />
+                                                            <span class="text-danger"><small>Busy</small></span>
+                                                        </div>
+    
+                                                        <div class="col-xs-3 text-right">
+                                                            <btn class="btn btn-sm btn-success btn-icon"><i class="fa fa-skype"></i></btn>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                </div>
+
+
+
+                                <div class="header">
+                                        <h4 class="title">Others</h4>
+                                    </div>
+                                    <div class="content">
+                                        <ul class="list-unstyled team-members">
+                                                    <li>
+                                                        <div class="row">
+                                                            <div class="col-xs-3">
+                                                                <div class="avatar">
+                                                                    <img src="assets/img/faces/face-0.jpg" alt="Circle Image" class="img-circle img-no-padding img-responsive">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-xs-6">
+                                                               sdgsd sdgs g
+                                                                <br />
+                                                                <span class="text-muted"><small>Offline</small></span>
+                                                            </div>
+        
+                                                            <div class="col-xs-3 text-right">
+                                                                <btn class="btn btn-sm btn-success btn-icon"><i class="fa fa-skype"></i></btn>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="row">
+                                                            <div class="col-xs-3">
+                                                                <div class="avatar">
+                                                                    <img src="assets/img/faces/face-1.jpg" alt="Circle Image" class="img-circle img-no-padding img-responsive">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-xs-6">
+                                                                affdsfsdf sdgs
+                                                                <br />
+                                                                <span class="text-success"><small>Available</small></span>
+                                                            </div>
+        
+                                                            <div class="col-xs-3 text-right">
+                                                                <btn class="btn btn-sm btn-success btn-icon"><i class="fa fa-skype"></i></btn>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="row">
+                                                            <div class="col-xs-3">
+                                                                <div class="avatar">
+                                                                    <img src="assets/img/faces/face-3.jpg" alt="Circle Image" class="img-circle img-no-padding img-responsive">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-xs-6">
+                                                              sdfsdf sdf
+                                                                <br />
+                                                                <span class="text-danger"><small>Busy</small></span>
+                                                            </div>
+        
+                                                            <div class="col-xs-3 text-right">
+                                                                <btn class="btn btn-sm btn-success btn-icon"><i class="fa fa-skype"></i></btn>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                            <div class="row">
+                                                                <div class="col-xs-3">
+                                                                    <div class="avatar">
+                                                                        <img src="assets/img/faces/face-3.jpg" alt="Circle Image" class="img-circle img-no-padding img-responsive">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-xs-6">
+                                                                  sdfsdf sdf
+                                                                    <br />
+                                                                    <span class="text-danger"><small>Busy</small></span>
+                                                                </div>
+            
+                                                                <div class="col-xs-3 text-right">
+                                                                    <btn class="btn btn-sm btn-success btn-icon"><i class="fa fa-skype"></i></btn>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                                <div class="row">
+                                                                    <div class="col-xs-3">
+                                                                        <div class="avatar">
+                                                                            <img src="assets/img/faces/face-3.jpg" alt="Circle Image" class="img-circle img-no-padding img-responsive">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-xs-6">
+                                                                      sdfsdf sdf
+                                                                        <br />
+                                                                        <span class="text-danger"><small>Busy</small></span>
+                                                                    </div>
+                
+                                                                    <div class="col-xs-3 text-right">
+                                                                        <btn class="btn btn-sm btn-success btn-icon"><i class="fa fa-skype"></i></btn>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                    <div class="row">
+                                                                        <div class="col-xs-3">
+                                                                            <div class="avatar">
+                                                                                <img src="assets/img/faces/face-3.jpg" alt="Circle Image" class="img-circle img-no-padding img-responsive">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-xs-6">
+                                                                          sdfsdf sdf
+                                                                            <br />
+                                                                            <span class="text-danger"><small>Busy</small></span>
+                                                                        </div>
+                    
+                                                                        <div class="col-xs-3 text-right">
+                                                                            <btn class="btn btn-sm btn-success btn-icon"><i class="fa fa-skype"></i></btn>
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                        <div class="row">
+                                                                            <div class="col-xs-3">
+                                                                                <div class="avatar">
+                                                                                    <img src="assets/img/faces/face-3.jpg" alt="Circle Image" class="img-circle img-no-padding img-responsive">
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-xs-6">
+                                                                              sdfsdf sdf
+                                                                                <br />
+                                                                                <span class="text-danger"><small>Busy</small></span>
+                                                                            </div>
+                        
+                                                                            <div class="col-xs-3 text-right">
+                                                                                <btn class="btn btn-sm btn-success btn-icon"><i class="fa fa-skype"></i></btn>
+                                                                            </div>
+                                                                        </div>
+                                                                    </li>
+                                                </ul>
+                                    </div>
+    
+  
+    
+                              </div>
+
+                        </div>
+                        
+
+  
+				</div>
+           
+
+
+              
+			  
+			     <div class="row"  id="issue_row">
+
+                    <div class="col-lg-8 col-md-7" id="submit_issue" style="display: none;">
+                        <div class="card">
+                            <div class="header">
+                                <h4 class="title">New Issue</h4>
+                            </div>
+                            <div class="content">
+                                <form>                                  
+
+                                    <div class="row">
+									   <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label>Name</label>
+                                                <input type="text" class="form-control border-input" placeholder="Last Name" value="">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label>Deadline</label>
+                                                <input type="date" class="form-control border-input" placeholder="Company" value="">
+                                            </div>
+                                        </div>
+                                       
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                              <label for="sel1">Select Task</label>
+											  <select class="form-control" id="sel1">
+												<option>abc</option>
+												<option>dsd</option>
+												<option>fs</option>
+												<option>sds</option>												
+												<option>Others</option>
+											  </select></div>
+                                        </div>
+										<div class="col-md-6">
+                                            <div class="form-group">
+                                                <label>Status</label>
+                                                <input type="text" class="form-control border-input" placeholder="Status" value="">
+                                            </div>
+                                        </div>
+                                    </div>
+									<div class="row">
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                              <label for="sel1">Select Assignee(s)</label>
+											  <select class="form-control" id="sel1">
+												<option>Shraddha</option>
+												<option>Surya</option>
+												<option>sds</option>												
+												<option>Others</option>
+											  </select></div>
+                                        </div>
+									</div>
+									 
+								
+                                   
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <label>Details</label>
+                                                <textarea rows="5" class="form-control border-input" placeholder="Here can be your description" value="Mike">
+                                                       Req. to be completed in four phases
+                                                </textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="text-center">
+                                        <button type="submit" class="btn btn-info btn-fill btn-wd">Add</button>
+									<button type="submit" class="btn btn-danger btn-fill btn-wd">Cancel</button>
+                                                                      
+								   </div>
+                                    <div class="clearfix"></div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>	
+  
+  
+                      
+					  
+					 
+  
+                    
+                    <div class="col-lg-4 col-md-5" id="team_issue" style="display: none;">
+                        
+                          <div class="card">
+                            <div class="header">
+                                    <h4 class="title" id="task_button">Suggested Team Members</h4>
+                                </div>
+							
+                                <div class="content">
+                                    <ul class="list-unstyled team-members">
+                                                <li>
+                                                    <div class="row">
+                                                        <div class="col-xs-3">
+                                                            <div class="avatar">
+                                                                <img src="assets/img/faces/face-0.jpg" alt="Circle Image" class="img-circle img-no-padding img-responsive">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-xs-6">
+                                                           sdgsd sdgs g
+                                                            <br />
+                                                            <span class="text-muted"><small>Offline</small></span>
+                                                        </div>
+    
+                                                        <div class="col-xs-3 text-right">
+                                                            <btn class="btn btn-sm btn-success btn-icon"><i class="fa fa-skype"></i></btn>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="row">
+                                                        <div class="col-xs-3">
+                                                            <div class="avatar">
+                                                                <img src="assets/img/faces/face-1.jpg" alt="Circle Image" class="img-circle img-no-padding img-responsive">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-xs-6">
+                                                            affdsfsdf sdgs
+                                                            <br />
+                                                            <span class="text-success"><small>Available</small></span>
+                                                        </div>
+    
+                                                        <div class="col-xs-3 text-right">
+                                                            <btn class="btn btn-sm btn-success btn-icon"><i class="fa fa-skype"></i></btn>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="row">
+                                                        <div class="col-xs-3">
+                                                            <div class="avatar">
+                                                                <img src="assets/img/faces/face-3.jpg" alt="Circle Image" class="img-circle img-no-padding img-responsive">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-xs-6">
+                                                          sdfsdf sdf
+                                                            <br />
+                                                            <span class="text-danger"><small>Busy</small></span>
+                                                        </div>
+    
+                                                        <div class="col-xs-3 text-right">
+                                                            <btn class="btn btn-sm btn-success btn-icon"><i class="fa fa-skype"></i></btn>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                </div>
+
+
+
+                                <div class="header">
+                                        <h4 class="title">Others</h4>
+                                    </div>
+                                    <div class="content">
+                                        <ul class="list-unstyled team-members">
+                                                    <li>
+                                                        <div class="row">
+                                                            <div class="col-xs-3">
+                                                                <div class="avatar">
+                                                                    <img src="assets/img/faces/face-0.jpg" alt="Circle Image" class="img-circle img-no-padding img-responsive">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-xs-6">
+                                                               sdgsd sdgs g
+                                                                <br />
+                                                                <span class="text-muted"><small>Offline</small></span>
+                                                            </div>
+        
+                                                            <div class="col-xs-3 text-right">
+                                                                <btn class="btn btn-sm btn-success btn-icon"><i class="fa fa-skype"></i></btn>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="row">
+                                                            <div class="col-xs-3">
+                                                                <div class="avatar">
+                                                                    <img src="assets/img/faces/face-1.jpg" alt="Circle Image" class="img-circle img-no-padding img-responsive">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-xs-6">
+                                                                affdsfsdf sdgs
+                                                                <br />
+                                                                <span class="text-success"><small>Available</small></span>
+                                                            </div>
+        
+                                                            <div class="col-xs-3 text-right">
+                                                                <btn class="btn btn-sm btn-success btn-icon"><i class="fa fa-skype"></i></btn>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="row">
+                                                            <div class="col-xs-3">
+                                                                <div class="avatar">
+                                                                    <img src="assets/img/faces/face-3.jpg" alt="Circle Image" class="img-circle img-no-padding img-responsive">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-xs-6">
+                                                              sdfsdf sdf
+                                                                <br />
+                                                                <span class="text-danger"><small>Busy</small></span>
+                                                            </div>
+        
+                                                            <div class="col-xs-3 text-right">
+                                                                <btn class="btn btn-sm btn-success btn-icon"><i class="fa fa-skype"></i></btn>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                            <div class="row">
+                                                                <div class="col-xs-3">
+                                                                    <div class="avatar">
+                                                                        <img src="assets/img/faces/face-3.jpg" alt="Circle Image" class="img-circle img-no-padding img-responsive">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-xs-6">
+                                                                  sdfsdf sdf
+                                                                    <br />
+                                                                    <span class="text-danger"><small>Busy</small></span>
+                                                                </div>
+            
+                                                                <div class="col-xs-3 text-right">
+                                                                    <btn class="btn btn-sm btn-success btn-icon"><i class="fa fa-skype"></i></btn>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                                <div class="row">
+                                                                    <div class="col-xs-3">
+                                                                        <div class="avatar">
+                                                                            <img src="assets/img/faces/face-3.jpg" alt="Circle Image" class="img-circle img-no-padding img-responsive">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-xs-6">
+                                                                      sdfsdf sdf
+                                                                        <br />
+                                                                        <span class="text-danger"><small>Busy</small></span>
+                                                                    </div>
+                
+                                                                    <div class="col-xs-3 text-right">
+                                                                        <btn class="btn btn-sm btn-success btn-icon"><i class="fa fa-skype"></i></btn>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                    <div class="row">
+                                                                        <div class="col-xs-3">
+                                                                            <div class="avatar">
+                                                                                <img src="assets/img/faces/face-3.jpg" alt="Circle Image" class="img-circle img-no-padding img-responsive">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-xs-6">
+                                                                          sdfsdf sdf
+                                                                            <br />
+                                                                            <span class="text-danger"><small>Busy</small></span>
+                                                                        </div>
+                    
+                                                                        <div class="col-xs-3 text-right">
+                                                                            <btn class="btn btn-sm btn-success btn-icon"><i class="fa fa-skype"></i></btn>
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                        <div class="row">
+                                                                            <div class="col-xs-3">
+                                                                                <div class="avatar">
+                                                                                    <img src="assets/img/faces/face-3.jpg" alt="Circle Image" class="img-circle img-no-padding img-responsive">
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-xs-6">
+                                                                              sdfsdf sdf
+                                                                                <br />
+                                                                                <span class="text-danger"><small>Busy</small></span>
+                                                                            </div>
+                        
+                                                                            <div class="col-xs-3 text-right">
+                                                                                <btn class="btn btn-sm btn-success btn-icon"><i class="fa fa-skype"></i></btn>
+                                                                            </div>
+                                                                        </div>
+                                                                    </li>
+                                                </ul>
+                                    </div>
+    
+  
+    
+                              </div>
+
+                        </div>
+                        
+ 
+              
+
+                </div>
+           
+
+
+
+		   </div>
         </div>
 
 
@@ -434,25 +1132,70 @@
 
 </body>
 
-   <script type="text/javascript">
- 
- $(document).ready(function() {
-
-     $('#boot-multiselect-demo').multiselect({
-
-     includeSelectAllOption: true,
-
-     buttonWidth: 250,
-
-     enableFiltering: true
-
- });
-
- });
-
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script>
+$(document).ready(function(){
+    $("#add_task").click(function(){
+        $("#submit_task").toggle();
+		
+	    $("#row_issue").hide();
+		$("#row_event").hide();
+		if ($('#submit_task').is(":visible"))
+		{
+			 $('#add_task').text('Cancel');   // Hide button
+		}
+		else
+		 $('#add_task').text('Add'); 
+		
+		
+        $("#team_list").toggle();
+    });
+	
+	$("#add_issue").click(function(){
+	    $("#row_task").hide();
+		$("#row_event").hide();
+		
+        $("#submit_issue").toggle();
+		if ($('#submit_issue').is(":visible"))
+		{
+			 $('#add_issue').text('Cancel');   // Hide button
+		}
+		else
+		 $('#add_issue').text('Add'); 
+		
+		
+        $("#team_issue").toggle();
+		
+    }); 
+	
+	
+	
+	$("#add_event").click(function(){
+        $("#submit_event").toggle();
+		
+	    $("#row_task").hide();
+	    $("#row_issue").hide();
+		
+		if ($('#submit_event').is(":visible"))
+		{
+			 $('#add_event').text('Cancel');   // Hide button
+		}
+		else
+		 $('#add_event').text('Add'); 
+		
+		
+		
+		
+		
+        $("#team_event").toggle();
+    });
+	
+	
+	
+	
+});
 </script>
-   
-
+	
     <!--   Core JS Files   -->
     <script src="assets/js/jquery-1.10.2.js" type="text/javascript"></script>
 	<script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
