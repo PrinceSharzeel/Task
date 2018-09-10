@@ -130,7 +130,7 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-3 col-sm-6">
-                        <div class="card">
+                        <div class="card" onclick="location.href='#todo_div';">
                             <div class="content">
                                 <div class="row">
                                     <div class="col-xs-5">
@@ -155,7 +155,7 @@
                         </div>
                     </div>
                     <div class="col-lg-2 col-sm-6">
-                        <div class="card">
+                        <div class="card" >
                             <div class="content">
                                 <div class="row">
                                     <div class="col-xs-5">
@@ -180,7 +180,7 @@
                         </div>
                     </div>
                     <div class="col-lg-2 col-sm-6">
-                        <div class="card">
+                        <div class="card" onclick="location.href='#issue_div';">
                             <div class="content">
                                 <div class="row">
                                     <div class="col-xs-5">
@@ -191,7 +191,7 @@
                                     <div class="col-xs-7">
                                         <div class="numbers">
                                             <p>Events</p>
-                                            0
+                                            2
                                         </div>
                                     </div>
                                 </div>
@@ -205,7 +205,7 @@
                         </div>
                     </div>
 					 <div class="col-lg-2 col-sm-6">
-                        <div class="card">
+                        <div class="card" onclick="location.href='#issue_div';">
                             <div class="content">
                                 <div class="row">
                                     <div class="col-xs-5">
@@ -215,8 +215,8 @@
                                     </div>
                                     <div class="col-xs-7">
                                         <div class="numbers">
-                                            <p>Errors</p>
-                                            23
+                                            <p>Issues</p>
+                                            2
                                         </div>
                                     </div>
                                 </div>
@@ -230,7 +230,7 @@
                         </div>
                     </div>
                     <div class="col-lg-3 col-sm-6">
-                        <div class="card">
+                        <div class="card" onclick="location.href='#team_div';">
                             <div class="content">
                                 <div class="row">
                                     <div class="col-xs-5">
@@ -240,8 +240,8 @@
                                     </div>
                                     <div class="col-xs-7">
                                         <div class="numbers">
-                                            <p>Tasks</p>
-                                            4
+                                            <p>Team Tasks</p>
+                                            3
                                         </div>
                                     </div>
                                 </div>
@@ -258,7 +258,7 @@
 
 
 
-                <div class="row">
+                <div class="row" id="todo_div">
                         <div class="col-md-12">
                                 <div class="card">
                                     <div class="header">
@@ -281,9 +281,9 @@
                                                     <td>15 Sept</td>
                                                     <td>
                                                             <div class="progress">
-                                                                    <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar"
-                                                                    aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width:40%">
-                                                                      40% Complete (success)
+                                                                    <div class="progress-bar progress-bar-warning progress-bar-striped" role="progressbar"
+                                                                    aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width:30%">
+                                                                      30% 
                                                                     </div>
                                                                   </div>
                 
@@ -314,8 +314,8 @@
                                                         
                                                             <div class="progress">
                                                                     <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar"
-                                                                    aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width:40%">
-                                                                      40% Complete (success)
+                                                                    aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width:80%">
+                                                                      80%  
                                                                     </div>
                                                                   </div>
                 
@@ -350,12 +350,12 @@
                 </div>
 
                 
-           <div class="row">
+           <div class="row" id="team_div">
             <div class="col-md-12">
                 <div class="card">
                     <div class="header">
                         <h4 class="title">Task Tray</h4>
-                        <p class="category">Current requirements</p>
+                        <p class="category">Current Team requirements</p>
                     </div>
                     <div class="content table-responsive table-full-width">
                         <table class="table table-striped">
@@ -374,8 +374,8 @@
                                     <td>
                                             <div class="progress">
                                                     <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar"
-                                                    aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width:40%">
-                                                      40% Complete (success)
+                                                    aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+                                                      70% 
                                                     </div>
                                                   </div>
 
@@ -391,7 +391,7 @@
                                                                     <img src="assets/img/faces/face-1.jpg" title="ABC" alt="Circle Image" class="img-circle img-no-padding img-responsive">
                                                                 </div></th>
                                                                 <th style="border:0;"><div class="avatar">
-                                                                        <img src="assets/img/faces/face-0.jpg" title="ABC" alt="Circle Image" class="img-circle img-no-padding img-responsive">
+                                                                        <img src="assets/img/faces/face-lady.png" title="ABC" alt="Circle Image" class="img-circle img-no-padding img-responsive">
                                                                     </div></th>
                                                     </tbody>
     
@@ -406,18 +406,16 @@
                                     <td>
                                         
                                             <div class="progress">
-                                                    <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar"
-                                                    aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width:40%">
-                                                      40% Complete (success)
-                                                    </div>
+                                                    <div class="progress-bar progress-bar-danger progress-bar-striped" role="progressbar"
+                                                    aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width:10%">
+                                                      10% 
                                                   </div>
-
                                     </td>
                                     <td>
                                             <table>
                                                     <tbody >
                                                             <th style="border:0;"><div class="avatar">
-                                                                    <img src="assets/img/faces/face-0.jpg" title="ABC"  alt="Circle Image" class="img-circle img-no-padding img-responsive">
+                                                                    <img src="assets/img/faces/face-lady.png" title="ABC"  alt="Circle Image" class="img-circle img-no-padding img-responsive">
                                                                 </div></th>
                                                             <th style="border:0;"><div class="avatar">
                                                                     <img src="assets/img/faces/face-1.jpg" title="ABC" alt="Circle Image" class="img-circle img-no-padding img-responsive">
@@ -439,8 +437,8 @@
 
                                             <div class="progress">
                                                     <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar"
-                                                    aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width:40%">
-                                                      40% Complete (success)
+                                                    aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width:90%">
+                                                      90% 
                                                     </div>
                                                   </div>
 
@@ -450,7 +448,7 @@
                                         <table>
                                                 <tbody>
                                                         <th style="border:0;"><div class="avatar">
-                                                                <img src="assets/img/faces/face-0.jpg" title="ABC" alt="Circle Image" class="img-circle img-no-padding img-responsive">
+                                                                <img src="assets/img/faces/face-lady.png" title="ABC" alt="Circle Image" class="img-circle img-no-padding img-responsive">
                                                             </div></th>
                                                         <th style="border:0;"><div class="avatar">
                                                                 <img src="assets/img/faces/face-1.jpg" title="ABC"  alt="Circle Image" class="img-circle img-no-padding img-responsive">
@@ -474,7 +472,7 @@
            </div>
 
 
-   <div class="row">
+   <div class="row" id="issue_div">
                         <div class="col-md-6" >
                                 <div class="card">
                                     <div class="header">
@@ -557,10 +555,10 @@
                                                 </tr>
                                                 <tr>
 												     <td>
-                                                            <a href="specific_event.html">E Learning</a>
+                                                            <a href="specific_event.html">Team Meeting</a>
                                                         </td>
-                                                    <td>  9/9/18</td>
-                                                    <td>5:00</td>
+                                                    <td>  14/9/18</td>
+                                                    <td>11:00</td>
                                                     <td>sfsfs sfsfs fs </td>
                                                     <td> 
 																   <table>
@@ -572,7 +570,7 @@
                                                                     <img src="assets/img/faces/face-1.jpg" title="ABC" alt="Circle Image" class="img-circle img-no-padding img-responsive">
                                                                 </div></th>
                                                                 <th style="border:0;"><div class="avatar">
-                                                                        <img src="assets/img/faces/face-0.jpg" title="ABC" alt="Circle Image" class="img-circle img-no-padding img-responsive">
+                                                                        <img src="assets/img/faces/face-lady.png" title="ABC" alt="Circle Image" class="img-circle img-no-padding img-responsive">
                                                                     </div></th>
                                                     </tbody>
     
@@ -610,19 +608,15 @@
                     <ul>
 
                         <li>
-                            <a href="">
+                            <a href="UI.html">
                                About
                             </a>
                         </li>
-                        <li>
-                            <a href="">
-                               Team
-                            </a>
-                        </li>
+                        
                     </ul>
                 </nav>
                 <div class="copyright pull-right">
-                    &copy; <script>document.write(new Date().getFullYear())</script>, made with <i class="fa fa-heart heart"></i> by <a href="">CSIG</a>
+                    &copy; <script>document.write(new Date().getFullYear())</script>, made with <i class="fa fa-heart heart"></i> by <a href="UI.html">CSIG</a>
                 </div>
             </div>
         </footer>
