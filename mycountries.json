@@ -1,25 +1,5 @@
-[{
-    "name": "United States of America",
-    "age": 30,
-    "id":"USA",
-    "city": "New York"
-},
-{
-    "name": "India",
-    "age": 30,
-    "id":"IND",
-    "city": "New York"
-},
-{
-    "name": "Australia",
-    "age": 30,
-    "id":"AUS",
-    "city": "New York"
-},
-{
-    "name": "Egypt",
-    "age": 30,
-    "id":"EGY",
-    "city": "New York"
-}
-]
+[ 
+{"name": "India", "code": "IND"}, 
+{"name": "Egypt", "code": "EGY"}, 
+{"name": "Bangladesh", "code": "BAN"}
+    ]
