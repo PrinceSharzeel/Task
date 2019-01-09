@@ -21,7 +21,7 @@
 
   , setState: function () {
       var $el = this.$element
-        , $parent = $el.closest('.checkbox');
+        , $parent = $el.closest(".checkbox");
 
         $el.prop('disabled') && $parent.addClass('disabled');
         $el.prop('checked') && $parent.addClass('checked');
@@ -30,11 +30,11 @@
   , toggle: function () {
       var ch = 'checked'
         , $el = this.$element
-        , $parent = $el.closest('.checkbox')
+        , $parent = $el.closest(".checkbox")
         , checked = $el.prop(ch)
         , e = $.Event('toggle')
 
-      if ($el.prop('disabled') == false) {
+      if ($el.prop('disabled') === false) {
         $parent.toggleClass(ch) && checked ? $el.removeAttr(ch) : $el.prop(ch, ch);
         $el.trigger(e).trigger('change');
       }
@@ -44,12 +44,12 @@
       var d = 'disabled'
         , ch = 'checked'
         , $el = this.$element
-        , $parent = $el.closest('.checkbox')
+        , $parent = $el.closest(".checkbox")
         , checkAction = option == 'check' ? true : false
         , e = $.Event(option)
 
       $parent[checkAction ? 'addClass' : 'removeClass' ](ch) && checkAction ? $el.prop(ch, ch) : $el.removeAttr(ch);
-      $el.trigger(e).trigger('change');
+      $el.trigger(e).trigger("change");
     }
 
   }
@@ -58,13 +58,13 @@
  /* CHECKBOX PLUGIN DEFINITION
   * ======================== */
 
-  var old = $.fn.checkbox
+  var old = $.fn.checkbox;
 
   $.fn.checkbox = function (option) {
     return this.each(function () {
       var $this = $(this)
-        , data = $this.data('checkbox')
-        , options = $.extend({}, $.fn.checkbox.defaults, $this.data(), typeof option == 'object' && option);
+        , data = $this.data(".checkbox")
+        , options = $.extend({}, $.fn.checkbox.defaults, $this.data(), typeof option == "object" && option);
       if (!data) $this.data('checkbox', (data = new Checkbox(this, options)));
       if (option == 'toggle') data.toggle()
       if (option == 'check' || option == 'uncheck') data.setCheck(option)
@@ -91,9 +91,10 @@
 
   $(document).on('click.checkbox.data-api', '[data-toggle^=checkbox], .checkbox', function (e) {
     var $checkbox = $(e.target);
-    if (e.target.tagName != "A") {
+    if (e.target.tagName !== "A") {
       e && e.preventDefault() && e.stopPropagation();
-      if (!$checkbox.hasClass('checkbox')) $checkbox = $checkbox.closest('.checkbox');
+      if (!$checkbox.hasClass('checkbox')) 
+      {$checkbox = $checkbox.closest('.checkbox');}
       $checkbox.find(':checkbox').checkbox('toggle');
     }
   });
@@ -155,12 +156,12 @@
               var $el = $(this)
                 , $parent = $(this).closest('.radio');
 
-                if ($el.prop(d) == false) {
+                if ($el.prop(d) === false) {
                   $parent.removeClass(ch) && $el.removeAttr(ch).trigger('change');
                 }
             });
 
-            if (checked == false) $parent.addClass(ch) && $el.prop(ch, true);
+            if (checked === false) $parent.addClass(ch) && $el.prop(ch, true);
             $el.trigger(e);
 
             if (checked !== $el.prop(ch)) {
@@ -173,7 +174,7 @@
       var ch = 'checked'
         , $el = this.$element
         , $parent = $el.closest('.radio')
-        , checkAction = option == 'check' ? true : false
+        , checkAction = option === 'check' ? true : false
         , checked = $el.prop(ch)
         , $parentWrap = $el.closest('form').length ? $el.closest('form') : $el.closest('body')
         , $elemGroup = $parentWrap.find(':radio[name="' + $el['attr']('name') + '"]')
