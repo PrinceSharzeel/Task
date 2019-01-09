@@ -141,7 +141,7 @@
         $el.prop('checked') && $parent.addClass('checked');
     }
 
-  , toggle: function () {
+  , toggle: function () { 
       var d = 'disabled'
         , ch = 'checked'
         , $el = this.$element
