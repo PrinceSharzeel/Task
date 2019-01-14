@@ -492,7 +492,7 @@ jQuery.extend({
 		// Support: IE<9
 		// Handle iteration over inherited properties before own properties.
 		if ( jQuery.support.ownLast ) {
-			for ( key in obj ) {
+			for ( var key in obj ) {
 				return core_hasOwn.call( obj, key );
 			}
 		}
@@ -661,7 +661,7 @@ jQuery.extend({
 					}
 				}
 			} else {
-				for ( i in obj ) {
+				for ( var i in obj ) {
 					value = callback.call( obj[ i ], i, obj[ i ] );
 
 					if ( value === false ) {
